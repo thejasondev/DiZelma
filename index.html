@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es"    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=divece-width, initial-scale=1.0">
+  <title>DiZelma</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--JQuery desde un CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>
+      DiZelma
+    </h1>
+  </header>
+  <main>
+    <!--Navegación por pestaña-->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="welcome">
+        Bienvenidos
+      </button>
+      <button class="tab-button" data-tab="info">
+      Información  
+      </button>
+      <button class="tab-button" data-tab="exercise">
+        Ejercicio
+      </button>
+    </div>
+    
+    <!--Contenido de las pestañas-->
+    <div class="tab-content" id="welcome">
+      <h2>Bienvenidos a Dizelma!</h2>
+      <br>
+      <p class="highlight-background">
+        En DiZelma, nuestra misión es clara y apasionante: proporcionar herramientas y recursos efectivos para combatir la dislexia en los educandos. Esta página web ha sido construida con dedicación y compromiso para apoyar a los estudiantes, padres y educadores en su esfuerzo por superar los desafíos que la dislexia presenta. Creemos firmemente que cada niño tiene el potencial para alcanzar grandes logros académicos y personales. Con actividades interactivas, información valiosa y estrategias de enseñanza innovadoras, DiZelma se erige como un faro de esperanza y ayuda para aquellos que enfrentan la dislexia.
+        Juntos, podemos hacer una diferencia significativa en la vida de nuestros educandos!.
+      </p>
+    </div>
+    <div class="tab-content" id="info"  style="display: none;">
+      <h2>Sobre la dislexia</h2>
+      <p>
+        La dislexia es una dificultad de aprendizaje específica que afecta la capacidad de una persona de leer, escribir y deletrear. Es importante abordar esta condición en los educandos mediante actividades específicas y adaptativas.
+      </p>
+    </div>
+    <div class="tab-content" id="exercise" style="display: none;">
+      <h2>Actividades para combatir la dislexia</h2>
+      <p>
+        Una de las actividades recomendadas es el uso de cuadernos de ejercicios diseñados específicamente para ayudar a los educandos con dislexia. A continuación, se muestra un ejemplo de una actividad de nuestro cuaderno.
+      </p>
+    
+   
+      <!-- Actividad para completar las palabras -->
+      <div class="activity">
+        <br>
+        <h5>
+          Actividad 3: "Escuchando escuchando, voy completando"
+        </h5>
+        <p>
+          Escucha los audios y completa las palabras que tengan el sonido /r/.
+        </p>
+        <div class="exercise">
+          <div class="exercise-item" data-correct="R">
+            <img src="Thumbnails/Pirata/pirate_icon.png" alt="Pirata">
+            <audio id="audio-pirata" src="./Audios/Pirata/Audio-Pirata.mp3"></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-pirata').play()">Escuchar</button>
+            <p>Pi_ata</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="L">
+            <img src="Thumbnails/Lupa/zoom_icon.png" alt="Lupa">
+            <audio id="audio-lupa" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-lupa').play()">Escuchar</button>
+            <p>_upa</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="R">
+            <img src="Thumbnails/Ratón/mouse_icon.png" alt="Ratón">
+            <audio id="audio-ratón" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-ratón').play()">Escuchar</button>
+            <p>_atón</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="R">
+            <img src="Thumbnails/Arcoiris/rainbow_icon.png" alt="Arcoíris">
+            <audio id="audio-arcoíris" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-arcoíris').play()">Escuchar</button>
+            <p>a_coíris</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="L">
+            <img src="Thumbnails/Pelota/ball_icon.png" alt="Pelota">
+            <audio id="audio-pelota" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-pelota').play()">Escuchar</button>
+            <p>pe_ota</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="R">
+            <img src="Thumbnails/Amor/heart_icon.png" alt="Amor">
+            <audio id="audio-amor" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-amor').play()">Escuchar</button>
+            <p>amo_</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="L">
+            <img src="Thumbnails/Ola/water_icon.png" alt="Ola">
+            <audio id="audio-ola" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-ola').play()">Escuchar</button>
+            <p>o_a</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+
+          <div class="exercise-item" data-correct="R">
+            <img src="Thumbnails/Remar/rowing_icon.png" alt="Remar">
+            <audio id="audio-remar" src=""></audio>
+            <button class="listen-button" onclick="document.getElementById('audio-remar').play()">Escuchar</button>
+            <p>_mar</p>
+            <button
+            class="letter-button" data-letter="R">R
+            </button>
+            <button
+            class="letter-button" data-letter="L">L
+            </button>
+            <p class="feedback"></p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </main>
+  <script 
+  src="script.js">
+  </script>
+</body>
+</html>

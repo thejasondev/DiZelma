@@ -1,0 +1,179 @@
+/*Estilo General*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E3FEF7;
+  color: #003C43;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ }
+
+ 
+ header {
+  background-color: #135D66;
+  color: #E3FEF7;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+main {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/*Centrado vertical y horizontal para el contenido de bienvenida*/
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*Estilo párrafo de bienvenida*/
+.welcome {
+  text-align: center;
+  margin: 200px 0;
+}
+
+.welcome h2 {
+  font-size: 2em;
+  color: #003c43;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.2em;
+  color: #000;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.highlight-background {
+  background: url(c:\Users\Jason.G\Desktop\.vscode\DiZelma\Fondo\fondo.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+.highlight-background {
+  font-size: 1em;
+  font-weight: bold;
+  color: #003C43;
+}
+
+
+/*Estilo de las pestañas*/
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #135D66;
+  color: #E3FEF7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #003C43;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-button.active {
+  display: block;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  color: #003C43;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*Estilo para actividades*/
+.activity {
+  text-align: left;
+}
+
+.exercise {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  justify-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.exercise-item {
+  margin-bottom: 20px;
+}
+
+.exercise-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.letter-button {
+  background-color: #135D66;
+  color: #E3FEF7;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.letter-button:hover {
+  background-color: #003c43;
+}
+
+.listen-button {
+  background-color: #135D66;
+  color: #E3FEF7;
+  padding: 5px; 
+  border-radius: 5px;
+}
+
+.listen-button:hover {
+  background-color: #003c43;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
