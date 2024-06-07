@@ -47,33 +47,6 @@ main {
 }
 
 /*Estilo párrafo de bienvenida*/
-.welcome {
-  text-align: center;
-  margin: 200px 0;
-}
-
-.welcome h2 {
-  font-size: 2em;
-  color: #003c43;
-  margin-bottom: 10px;
-}
-
-.welcome p {
-  font-size: 1.2em;
-  color: #000;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  position: relative;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.highlight-background {
-  background: url(c:\Users\Jason.G\Desktop\.vscode\DiZelma\Fondo\fondo.jpeg) no-repeat center center;
-  background-size: cover;
-}
-
 .highlight-background {
   font-size: 1em;
   font-weight: bold;
